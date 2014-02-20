@@ -1,1 +1,10 @@
-test
+Some attempt at a predicted shortest job first (PSJF) scheduler for the Linux
+kernel.
+
+It runs a lot slower than the normal scheduler.
+
+Install notes:
+Copy files onto a clean extraction of linux-3.10.10 sources and allow to
+overwrite. Compile the kernel with SMP disabled and with SCHED_RR/FIFO
+disabled. Only tested for a 32-bit kernel. Compilation for 64-bit kernel may
+or may not work, or may cause errors upon boot.
