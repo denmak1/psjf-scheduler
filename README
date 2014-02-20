@@ -1,5 +1,8 @@
 Some attempt at a predicted shortest job first (PSJF) scheduler for the Linux
-kernel.
+kernel. The PSJF scheduler predicts a burst duration for an incoming task for
+the the CPU by looking at previous tasks and how much CPU time they took, and
+calculates an estimate by using a formula. Incoming jobs are sorted by shortest
+predictes CPU time in this scheduler.
 
 It runs a lot slower than the normal scheduler.
 
